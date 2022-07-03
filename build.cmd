@@ -1,5 +1,5 @@
 python setup.py bdist_wheel sdist
-pip install -e .[testing]
+pip install -e .[dev]
 tox
 
 @REM check-manifest --create
