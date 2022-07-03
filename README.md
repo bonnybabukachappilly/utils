@@ -6,6 +6,8 @@ logHander is a simple package to create log. I copy paste same file in all of my
 I decided to create thid as a package and simply import it.
 Currently limited to basic functionality but plans to upgrade it in future.
 
+![Tests](https://github.com/bonnybabukachappilly/utils/tree/logHandler/actions/workflows/tests.yml/badge.svg)
+
 ## Features
 
 * Simple add basic log functionality.
