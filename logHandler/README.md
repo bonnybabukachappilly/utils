@@ -23,5 +23,5 @@ pip install logHander
 To install logHandler along with tools for developnment and testing run following command.
 
 ```cmd
-pip install -e .[dev]
+pip install -e .[testing]
 ```
