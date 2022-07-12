@@ -130,7 +130,7 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-.pypyrc
+.pypirc
 
 # VS Code
 .vscode/
