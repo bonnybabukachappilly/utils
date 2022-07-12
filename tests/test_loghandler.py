@@ -15,7 +15,7 @@ class TestLogHandler:
         pass
 
     def test_id(self):
-        Logger(self.log_folder)
+        Logger(self.log_folder, 'infoLogger')
         assert os.path.isfile(f'{self.log_folder}/id.txt')
 
     def test_info(self):
@@ -27,7 +27,10 @@ class TestLogHandler:
         with open(f'{self.log_folder}/id.txt', 'r') as ids:
             self.id = int(ids.read()) - 1
 
-        with open(f'{self.log_folder}/log/log_{self.id}_INFO.log', 'r') as f:
+        with open(f'{self.log_folder}/log/log_{self.id}.log', 'r') as f:
             file = f.read()
 
         assert message == file.split('INFO: ')[1].split('\n')[0].strip()
+
+    # TODO: Testing for log level
+    # TODO: Testing for ValuError

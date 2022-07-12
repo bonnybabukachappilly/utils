@@ -11,13 +11,25 @@ Currently limited to basic functionality but plans to upgrade it in future.
 ## Features
 
 * Simple add basic log functionality.
-* create 2 log files [debug, info].
 * logs to console.
 
 ## Installation
 
 ```cmd
 pip install logHander
+```
+
+## Ussage
+
+```python
+from logHandler import Logger
+Logger('path to log folder', 'log name', [optional] log_level)
+
+# somewhere in the package
+import logging
+log = logging.getLogger('log name')
+log.info("Hello There")
+
 ```
 
 ## Development
